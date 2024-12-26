@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | B.Tech Student Portfolio</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+        }
+        
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #009688, #004d40);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 2px solid white;
+            border-radius: 25px;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            color: #004d40;
+        }
+
+        /* Main Section */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .about, .skills, .projects, .contact {
+            background: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            background-color: #009688;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        .skills h2 {
+            text-align: center;
+            color: #004d40;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .skills ul li {
+            background: #009688;
+            color: white;
+            padding: 15px;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1.1em;
+            transition: transform 0.2s;
+        }
+
+        .skills ul li:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Projects Section */
+        .projects h2 {
+            text-align: center;
+            color: #004d40;
+        }
+
+        .projects .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #e0f2f1;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .projects .project h3 {
+            color: #004d40;
+        }
+
+        .projects .project p {
+            font-size: 1.1em;
+            text-align: center;
+            max-width: 80%;
+        }
+
+        /* Contact Section */
+        .contact h2 {
+            text-align: center;
+            background-color: #009688;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #004d40;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .contact a:hover {
+            background-color: #009688;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>John Doe</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am John Doe, a 5th-semester B.Tech student specializing in Computer Science. My interests include web development, 
+                data science, and machine learning. I love building functional applications and developing projects that solve 
+                real-world problems. I am constantly looking for opportunities to learn and grow as a developer.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, C++ Programming</li>
+                <li>React, Node.js (Learning)</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A responsive portfolio site built using HTML and CSS, showcasing my skills, projects, and contact details.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: Library Management System</h3>
+                <p>Created a Library Management System using C++ that enables users to manage books, issue/return operations, and track users.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3: AI Chatbot</h3>
+                <p>Built a Python-based AI chatbot using NLP, capable of responding to user queries in a conversational manner.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+            <a href="mailto:john.doe@example.com">Send Email</a>
+            <a href="https://linkedin.com/in/johndoe">Connect on LinkedIn</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
